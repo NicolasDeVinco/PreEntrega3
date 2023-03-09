@@ -67,7 +67,7 @@
             border: black solid 2px;
             box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
             border-radius: 10px;
-            margin-left: 40px;
+            width: 80%;
         }
 
 }
@@ -92,7 +92,7 @@
 
                 .tipos__info {
                     text-align: center;
-                    padding-top: 20px;
+                    padding: 20px 30px 40px 30px;
                     margin: auto;
                     background-image: radial-gradient(circle, rgb(63, 62, 62), rgb(10, 10, 10));
                     box-shadow: 0 8px 32px 0 rgba(184, 184, 185, 0.37);
@@ -100,11 +100,9 @@
                     border-radius: map-get($map: $glassformismo, $key:border-radius);
                     border:map-get($map: $glassformismo, $key:border);
                     color: $primary_color;
-                    padding-bottom: 40px;
+                  
                     
-                    
-                    
-                
+
                             .tipos__info--title {
                                 margin-top: 0;
                                 font-size: 35px;
@@ -117,8 +115,8 @@
 
                             .tipos__info--img {
                                 border: black solid;
-                                width: 220px;
-                                height: 200px;
+                                max-width: 220px;
+                                max-height: 200px;
                                 border-radius: 5%;
                                 margin-bottom: 20px;
                             }
@@ -183,7 +181,8 @@
             margin: auto;
         
                 .bio__img {
-                    max-width: 400px;
+                    width: calc($ancho_half + 10%);
+                    margin: auto;
                     margin-bottom: 70px;
                 }
 
@@ -436,55 +435,45 @@
 
 @media (max-width:992px){
 
-    .footer__info {
-        display: block;
-    }
 
-    .nav__footer--items {
-        justify-content: center;
-        width: 90%;
-        gap:2em;
-    }
-
-    .footer__encontrame {
-        margin: auto;
-        margin-top: 30px;
-        margin-bottom: 10px;
-        font-size: 25px;
-    }
-    
  /* INDEX */
 
 
-    .bada__info {
-        width: 90%;
+ .bada__container {
+    display:block;     
 
-    }
+        .bada__info {
+            width: 55%;
+        }
 
-.bada__info--img {
-    width: 50%;
+        .bada__flecha--img {
+            display: none;
+        }
+         
+        .bada__video {
+            margin: auto;
+            margin-top: 40px;
+            text-align: center;
+            width: 70%;        
+        }
+
 }
 
-    .bada__flecha--img {
-        display: none;
-  }
 
-    .bada__video {
-        text-align: center;
-}
 
-  .bada__video--mp4 {
-        width: 90%;
-        margin: auto;
-  }
+  .tipos__container {
 
-  .tipos__encargos {
-        display: block;
-}
+        .tipos__encargos {
+            display: block;
 
-    .tipos__info {
-        margin: auto;
-        width: 60%;
+                .tipos__info {
+                    width: 70%;
+
+                    .tipos__info--img {
+                        width: 50%;
+                    }
+                }
+        }
 }
 
 #tipos__info--realizadas {
@@ -499,75 +488,97 @@
 .bio__container {
     display: block;
 
-}
-
-.bio__container--texto {
-    margin: 0 40px 50px 40px;
-}
-
-.bio__img {
- margin: auto;
+        .bio__container--texto {
+            margin: 0 40px 50px 40px;
+        }
 }
 
 
 /* ENCARGOS */
 
-.calculo__form--datos {
-    display: block;
+.calculo__form {
+
+        .calculo__form--datos {
+            display: block;
+            text-align: center;
+        
+
+                .label__tamano {
+                    display: block;
+                }
+                
+                .label__sentido {
+                    display: block;
+                    margin-top: 20px;
+
+                }
+                
+                .label__bastidor {
+                    display: block;
+                }
+                
+                .label__diseno {
+                    display: block;
+                }
+
+
+                #sentido {
+                    margin-left: 30px;
+                }
+
+                #diseno {
+                    margin-left: 40px;
+                }
+                
+                .calculo__label {
+                    display: block;
+                }
+    }
 }
-
-.label__tamano {
-    display: block;
-  }
-  
-  .label__sentido {
-    display: block;
-    margin-top: 20px;
-  }
-   
-  .label__bastidor {
-    display: block;
-    margin-top: 0;
-  }
-  
-  .label__diseno {
-    display: block;
-  }
-
-
-  #sentido {
-    margin-left: 30px;
-  }
-
-  #diseno {
-    margin-left: 40px;
-  }
- 
-  .calculo__label {
-    display: block;
-  }
-
  /* CONTACTO */
 
- .contacto__container--title {
-    margin-top: 30px;
-  }
+ .contacto__container {
 
-  .contacto__container--info {
-    margin: auto;
-    text-align: center;
-  }
+        .contacto__container--info {
+            margin: auto;
+            text-align: center;
+        }
 
-  .contacto__mapa {
-    max-width: 400px;
-    margin-top: 20px;
-    margin-left: 20px;
-  }
+        .contacto__mapa {
+            max-width: 400px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
 
- .contacto__form {
-    margin: auto;
- 
-  }
+        .contacto__form {
+            margin: auto;
+        }
+    }
+
+
+
+    /* FOOTER */
+
+    .footer__container {
+
+        .footer__info {
+            display: block;
+        
+                .nav__footer--items {
+                    justify-content: center;
+                    width: 90%;
+                    gap:2em;
+                }
+    
+                .footer__encontrame {
+                    margin: auto;
+                    margin-top: 30px;
+                    margin-bottom: 10px;
+                    font-size: 25px;
+                }
+        }
+    }
+
 
 }
    
@@ -579,145 +590,108 @@
 
 @media (max-width:767px) {
 
-    .footer__info {
-        display: block;
-    }
+    .header__logo--img {
+        border-radius: 50px;
+        margin: 5px 0  5px 30px; 
+}
 
-    .nav__footer {
-        text-align: center;
-    }
-    
-    .footer__title {
-        text-align: start;
-        margin-bottom: 20px;
-    }
 
-    .nav__footer--items {
-        display: block;
-        font-size: 20px;
-        margin-bottom: 40px;
-        padding-left: 0;
-    }
-
-    .footer__encontrame {
-        margin: auto;
-        margin-top: 30px;
-        margin-bottom: 10px;
-        font-size: 25px;
-    }
-
-    
     /* INDEX */
-
-   
 
     .bada__container {
         display:block;     
+
+            .bada__flecha--img {
+                display: none;
+            }
+
+            .bada__video {
+                margin: auto;
+                margin-top: 40px;
+                width: 70%;       
+    }
+  
 }
 
-    .bada__info {
-        margin:auto;
-        margin-bottom: 50px;
-    }
+.tipos__container {
 
-    .bada__info--img {
-        width: 50%;
+    .tipos__encargos {
+        display: block;
     }
+        .tipos__info--img {
+            width: 50%;
+        }
+}
 
-    .bada__flecha--img {
-        display: none;
-    }
 
-    .bada__video {
-        text-align: center;
-    }
-
-  .bada__video--mp4 {
-
-        margin: auto;
-    }
-
-    .tipos__info {
-        margin: auto;
-        width: 70%;
-    }
 
 
 /* ACERCA DE MI */
 
     .bio__container {
     display: block;
-}
 
-    .bio__container--texto {
-    margin: 0 40px 50px 40px;
+            .bio__container--texto {
+            margin: 0 40px 50px 40px;
+        }
 }
-
-    .bio__img {
-    max-width: 300px;
-    margin: auto;
-}
-
 
 
 /* ENCARGOS */
 
+.calculo__form {
 
-.calculo__form--datos {
-    display: block;
+        .calculo__form--datos {
+            display: block;
+            text-align: center;
+        }
+
+        .label__tamano {
+            display: block;
+        }
+        
+        .label__sentido {
+            display: block;
+            margin-top: 20px;
+        }
+        
+        .label__bastidor {
+            display: block;
+            margin-top: 0;
+        }
+        
+        .label__diseno {
+            display: block;
+        }
+
+        .calculo__label {
+            display: block;
+        }
+
 }
-
-.label__tamano {
-    display: block;
-  }
-  
-  .label__sentido {
-    display: block;
-    margin-top: 20px;
-  }
-   
-  .label__bastidor {
-    display: block;
-    margin-top: 0;
-  }
-  
-  .label__diseno {
-    display: block;
-  }
-
-  .calculo__label {
-    display: block;
-  }
-
-
 
   /* CONTACTO */
 
   .contacto__container {
     display: block;
-    padding-top: 50PX;
-  }
 
-  .contacto__container--title {
-    margin-top: 0px;
-  }
-
-  .contacto__container--info {
-    margin: auto;
-    text-align: center;
-  }
-
-  .contacto__mapa {
-    max-width: 300px;
-    margin-top: 20px;
-  }
-
-  .contacto__form {
-    margin: auto;
-    margin-top: 60px;
-  }
+        .contacto__container--info {
+            margin: auto;
+            text-align: center;
 
 
+                .contacto__mapa {
+                    max-width: 300px;
+                    margin-top: 20px;
+                }
+        }
+
+        .contacto__form {
+            margin: auto;
+            margin-top: 60px;
+        }
+
+}
 
 /* NAV */
 
@@ -751,6 +725,40 @@
     font-size: 30px;
     color: $primary_color;
 }
+
+
+/* FOOTER */
+
+.footer__container {
+
+    .footer__info {
+        display: block;  
+
+            .nav__footer {
+                text-align: center;
+            }
+            
+            .footer__title {
+                text-align: start;
+                margin-bottom: 20px;
+            }
+
+            .nav__footer--items {
+                display: block;
+                font-size: 20px;
+                margin-bottom: 40px;
+                padding-left: 0;
+            }
+    }
+    
+    .footer__encontrame {
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+}
+
 
 }
 

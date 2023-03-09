@@ -26,9 +26,10 @@ $glassformismo: (
     align-items: center;
 }
 
-@mixin block-query {
-    display: block;
+@mixin center-grid {
+    @include grid-center;
 }
+
 
 /* ----------- CONDICIONALES ------------------------*/
 
