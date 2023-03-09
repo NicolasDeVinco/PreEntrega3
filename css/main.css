@@ -646,8 +646,8 @@ body .whatsapp_bot {
   border-radius: 1em;
   padding: 1em 1.5em;
   margin: auto;
+  margin-right: 30px;
   margin-top: 80px;
-  margin-right: 100px;
   background: rgba(212, 211, 211, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
@@ -1178,6 +1178,9 @@ body .whatsapp_bot {
     display: block;
   }
   /* CONTACTO */
+  .contacto__container {
+    display: block;
+  }
   .contacto__container .contacto__container--info {
     margin: auto;
     text-align: center;
@@ -1189,6 +1192,7 @@ body .whatsapp_bot {
   }
   .contacto__container .contacto__form {
     margin: auto;
+    margin-top: 40px;
   }
   /* FOOTER */
   .footer__container .footer__info {

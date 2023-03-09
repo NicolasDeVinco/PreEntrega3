@@ -538,7 +538,7 @@
  /* CONTACTO */
 
  .contacto__container {
-
+display: block;
         .contacto__container--info {
             margin: auto;
             text-align: center;
@@ -552,6 +552,7 @@
 
         .contacto__form {
             margin: auto;
+            margin-top: 40px;
         }
     }
 
