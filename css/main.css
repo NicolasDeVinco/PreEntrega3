@@ -316,19 +316,51 @@ body .tipos__container {
 }
 
 /* --------------------- ANIMACIONES -----------------------------*/
-@keyframes efecto_logo {
+@keyframes logo__desktop {
   0% {
     border-radius: none;
-    margin: 5px 0 5px 350px;
+    margin: 5px 0 5px 250px;
   }
   50% {
     border-radius: 25px;
-    margin: 5px 0 5px 205px;
+    margin: 5px 0 5px 150px;
     transform: rotateZ(-360deg);
   }
   100% {
     border-radius: 50px;
     margin: 5px 0 5px 30px;
+  }
+}
+@keyframes logo__tablet {
+  0% {
+    width: 33px;
+    margin: 5px 0 5px 30px;
+  }
+  50% {
+    width: 66px;
+    margin: 5px 0 5px 30px;
+  }
+  100% {
+    width: 100px;
+    margin: 5px 0 5px 30px;
+  }
+}
+@keyframes logo__mobile {
+  0% {
+    border-radius: none;
+    margin: 5px 0 5px 250px;
+    border: grey solid 3px;
+  }
+  50% {
+    border-radius: 25px;
+    margin: 5px 0 5px 150px;
+    width: 50px;
+    border: black solid 3px;
+  }
+  100% {
+    border-radius: 50px;
+    margin: 5px 0 5px 30px;
+    width: 100px;
   }
 }
 /* ------------BODY------------------------------------------------ */
@@ -398,9 +430,9 @@ body .whatsapp_bot {
 }
 .pages__header--container .header__logo--img {
   width: 100px;
-  margin: 5px 0 5px 350px;
+  margin: 5px 0 5px 250px;
   border: white solid;
-  animation-name: efecto_logo;
+  animation-name: logo__desktop;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-duration: 2s;
@@ -1115,6 +1147,12 @@ body .whatsapp_bot {
 /* ------------------ MEDIA QUERIES --------------------------------------------------------*/
 /*-------------TABLET!!!!!! ----------------------------------*/
 @media (max-width: 992px) {
+  .pages__header--container .header__logo--img {
+    border-radius: 50px;
+    margin: 5px 0 5px 30px;
+    width: 33px;
+    animation-name: logo__tablet;
+  }
   /* INDEX */
   .bada__container {
     display: block;
@@ -1212,9 +1250,11 @@ body .whatsapp_bot {
 }
 /*------------ MOBILE!!!!!! ----------------------------------*/
 @media (max-width: 767px) {
-  .header__logo--img {
+  .pages__header--container .header__logo--img {
     border-radius: 50px;
-    margin: 5px 0 5px 30px;
+    margin: 5px 0 5px 250px;
+    width: 100px;
+    animation-name: logo__mobile;
   }
   /* INDEX */
   .bada__container {

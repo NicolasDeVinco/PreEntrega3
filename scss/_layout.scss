@@ -81,9 +81,9 @@ body {
 
                 .header__logo--img {
                     width: 100px;
-                    margin: 5px 0  5px 350px;
+                    margin: 5px 0  5px 250px;
                     border: $primary_color solid;
-                    animation-name: efecto_logo;
+                    animation-name: logo__desktop;
                     animation-iteration-count: 1;
                     animation-timing-function: linear;
                     animation-duration: 2s;

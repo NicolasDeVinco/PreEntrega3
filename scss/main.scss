@@ -435,7 +435,17 @@
 
 @media (max-width:992px){
 
+    .pages__header--container {
 
+            .header__logo--img {
+                border-radius: 50px;
+                margin: 5px 0  5px 30px;
+                width: 33px;
+                animation-name: logo__tablet;
+            }
+    }
+
+    
  /* INDEX */
 
 
@@ -538,7 +548,8 @@
  /* CONTACTO */
 
  .contacto__container {
-display: block;
+    display: block;
+
         .contacto__container--info {
             margin: auto;
             text-align: center;
@@ -591,12 +602,18 @@ display: block;
 
 @media (max-width:767px) {
 
-    .header__logo--img {
-        border-radius: 50px;
-        margin: 5px 0  5px 30px; 
+    .pages__header--container {
+
+        .header__logo--img {
+            border-radius: 50px;
+            margin: 5px 0  5px 250px;
+            width: 100px;
+            animation-name: logo__mobile;
+        }
 }
 
-
+  
+     
     /* INDEX */
 
     .bada__container {

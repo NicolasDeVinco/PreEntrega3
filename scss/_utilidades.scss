@@ -59,16 +59,45 @@ body {
 
 /* --------------------- ANIMACIONES -----------------------------*/
 
-@keyframes efecto_logo {
+@keyframes logo__desktop {
     0%{ border-radius: none;
-        margin: 5px 0  5px 350px; }
+        margin: 5px 0  5px 250px; }
    
     50%{ border-radius: 25px;
-        margin: 5px 0  5px 205px; 
-    transform: rotateZ(-360deg);}
+        margin: 5px 0  5px 150px; 
+        transform: rotateZ(-360deg);}
     
     100%{ border-radius: 50px;
         margin: 5px 0  5px 30px; 
         }
  }
  
+
+ @keyframes logo__tablet {
+    0%{ width: 33px;
+        margin: 5px 0  5px 30px;}
+   
+    50%{ width: 66px;
+        margin: 5px 0  5px 30px;}
+    
+    100%{ width: 100px;
+        margin: 5px 0  5px 30px;}
+ }
+
+
+ @keyframes logo__mobile {
+    0%{ border-radius: none;
+        margin: 5px 0  5px 250px;
+    border: grey solid 3px;
+ }
+   
+    50%{ border-radius: 25px;
+        margin: 5px 0  5px 150px; 
+        width: 50px;
+    border: black solid 3px;}
+    
+    100%{ border-radius: 50px;
+        margin: 5px 0  5px 30px; 
+        width: 100px;
+        }
+ }
