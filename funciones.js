@@ -1,13 +1,14 @@
+const toggleButton = document.getElementById('button-menu')
+const navWrapper = document.getElementById('nav')
 
-document.getElementById("burguer__menu").addEventListener("click", myFunction);
+toggleButton.addEventListener('click',() => {
+  toggleButton.classList.toggle('close')
+  navWrapper.classList.toggle('show')
+})
 
-
-function myFunction() {
-    var x = document.getElementById("pages__navbar");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+navWrapper.addEventListener('click',e => {
+  if(e.target.id === 'nav'){
+    navWrapper.classList.remove('show')
+    toggleButton.classList.remove('close')
   }
-
+})

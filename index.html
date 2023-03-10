@@ -19,18 +19,21 @@
 <body>
     <div class="hero__container">
         <header class="header__container">
-            <div class="pages__navbar">
-                <a href="./index.html">Inicio</a>
-                <a href="./paginas/acerca_de_mi.html">Acerca de Mí</a>
-                <a href="./paginas/obras.html">Obras</a>
-                <a href="./paginas/encargos.html">Encargos</a>
-                <a href="./paginas/contacto.html">Contacto</a>
-                <a href="./paginas/inicio_sesion.html"><img src="./images/user.svg" alt="icono usuario inicio sesion" class="pages__nav--user"></a>
-                <a href="./paginas/carrito.html"><img src="./images/carrito.svg" alt="icono carrito compra" class="pages__nav--carrito"></a>
-          </div>
-              <a href="javascript:void(0);" class="burguer__icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
+            <nav id="nav" class="main-nav" >
+                <div class="nav-links" >
+                    <a class="link-item" href="./index.html">Inicio</a>
+                    <a class="link-item" href="./paginas/acerca_de_mi.html">Acerca de Mí</a>
+                    <a class="link-item" href="./paginas/obras.html">Obras</a>
+                    <a class="link-item" href="./paginas/encargos.html">Encargos</a>
+                    <a class="link-item" href="./paginas/inicio_sesion.html"><img src="./images/user.svg" alt="icono usuario inicio sesion" class="pages__nav--user"></a>
+                    <a class="link-item" href="./paginas/carrito.html"><img src="./images/carrito.svg" alt="icono carrito compra" class="pages__nav--carrito"></a>
+                </div>
+              </nav>
+              <button id="button-menu" class="button-menu" >
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
         </header>
         <div class="hero__title">
             <h1 class="hero__title--texto">B E R L I N E R <br> arq + art</br></h1>
